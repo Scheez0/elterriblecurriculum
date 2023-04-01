@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Mi portafolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    // aparece el boton al bajar 100px
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 100) {
+                            $('#back-to-top').fadeIn();
+                        } else {
+                            $('#back-to-top').fadeOut();
+                        }
+                    });
+                    // btoon llevar al inicio
+                    $('#back-to-top').click(function () {
+                        $('html, body').animate({ scrollTop: 0 }, 800);
+                        return false;
+                    });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                    function setMenuHeight() {
+                        var headerHeight = $('header').height();
+                        $('.menu').css('height', headerHeight - parseInt($('.menu').css('padding-top')) * 2);
+                    }
+                    setMenuHeight();
+                    $(window).on('resize', function () {
+                        setMenuHeight();
+                    });
+                });
+            </script>
+
+            <div class="cabecera">
+                <h1>Cristian Flores Bernal</h1>
+                <p>Estudiante de Ingeniería en Informática</p>
+            </div>
+
+
+        </div>
+    </header>
+    <div class="menulateral">
+        <aside class="menu">
+            <ul>
+                <li><a href="#CV"><i class="bi bi-arrow-right-short"></i></i> Currículum</a></li>
+                <li><a href="#Hobbies"><i class="bi bi-arrow-right-short"></i> Mis Hobbies</a></li>
+                <li><a href="#Presentacion"><i class="bi bi-arrow-right-short"></i> Presentación</a></li>
+            </ul>
+        </aside>
+    </div>
+
+
+    <section id="CV">
+        <div class="container">
+            <div class="imgperfil">
+                <img src="fotoperfil.png" alt="Hola!" class="profile-img">
+            </div>
+
+            <div class="box">
+                <h2>Información Personal</h2>
+            </div>
+            <div class="job">
+                <p>Nombre Completo: Cristian Flores Bernal</p>
+                <p>Fecha de Nacimiento: 8 de diciembre</p>
+                <p>Estado Civil: Soltero</p>
+                <p>Telefono de Contacto: +56911111111</p>
+                <p>Email: cris@gmail.com</p>
+            </div>
+
+            <div class="box">
+                <h2>Educación</h2>
+            </div>
+            <div class="job">
+                <h3>Ingeniería en Informática</h3>
+                <p>Institución: Instituto Profesional AIEP</p>
+                <p>Año de inicio: 2022</p>
+                <p>Año de finalización: Cursando actualmente</p>
+            </div>
+
+            <div class="job">
+                <h3>Titulado de Técnico en Administración de Empresas</h3>
+                <p>Institución: Instituto Profesional AIEP</p>
+                <p>Fecha de inicio: 2018</p>
+                <p>Fecha de finalización: 2019</p>
+
+            </div><br>
+
+            <div class="box">
+                <h2>Experiencia Laboral </h2>
+            </div>
+            <div class="job">
+                <h3>Gestor de Intercambio</h3>
+                <p>Empresa: Banco de Crédito e Inversiones</p>
+                <p>Fecha de inicio: Agosto 2020</p>
+                <p>Fecha de finalización: Presente</p>
+                <p>Responsabilidades:</p>
+                <ul>
+                    <li> Orquestar de punta a punta el proceso de controversias de tarjetas, asegurando cumplimientos de
+                        normas y plazos establecidos por las Marcas Internacionales y Operadores (rol emisor y
+                        adquirente) y la coordinación entre áreas internas (prevención de fraudes, Centro de servicios,
+                        Contabilidad, Medios de Pagos y Operaciones) con la finalidad de asegurar el flujo de
+                        investigación, evitar pérdidas financieras para el banco y asegurar una respuesta oportuna al
+                        cliente dentro de los parámetros establecidos de seguridad, normativos y calidad de servicio.
+                        Monitoreando que los flujos del proceso de intercambio que se implementen en el banco estén
+                        actualizados y bajo las normas vigentes (Ley de fraude, release Marcas) coordinando y
+                        participando los proyectos dispuestos por las marcas internacionales, Fiscalía y entidades
+                        regulatorias. </li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Jefe de Servicio al Cliente</h3>
+                <p>Empresa: Banco de Crédito e Inversiones</p>
+                <p>Fecha de inicio: Agosto 2018</p>
+                <p>Fecha de finalización: Agosto 2020</p>
+                <p>Responsabilidades:</p>
+                <ul>
+                    <li>Capacitar y supervisar al personal de atención al cliente para garantizar que se brinde una
+                        excelente atención al cliente. Esto puede incluir capacitación en habilidades de comunicación,
+                        resolución de problemas y manejo de situaciones difíciles.</li>
+                    <li>Monitorear y mejorar la satisfacción del cliente para identificar áreas de mejora y tomar
+                        medidas para garantizar que los clientes estén satisfechos con el servicio que reciben.</li>
+                    <li>Responsable de supervisar y gestionar el presupuesto del departamento de operaciones, lo que
+                        puede incluir la asignación de recursos y la planificación de iniciativas para mejorar el
+                        servicio al cliente.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Greeter</h3>
+                <p>Empresa: Banco de Crédito e Inversiones</p>
+                <p>Fecha de inicio: Agosto 2013</p>
+                <p>Fecha de finalización: Agosto 2017</p>
+                <p>Responsabilidades:</p>
+                <ul>
+                    <li>Estar ubicado en un lugar visible cerca de la entrada del banco para saludar a los clientes que
+                        llegan y hacerles sentir bienvenidos.</li>
+                    <li>Si un cliente necesita ayuda, como abrir una nueva cuenta o solicitar un préstamo, programar una
+                        cita con el ejecutivo apropiado o proporcionar información sobre lo que necesite el cliente.
+                    </li>
+                    <li>Ayudar con la seguridad en el banco al supervisar la entrada y salida de los clientes y
+                        asegurarse de que se sigan los protocolos de seguridad adecuados.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Hobbies">
+        <div class="container">
+            <div class="box">
+                <h2>Mis Hobbies</h2>
+            </div>
+
+            <div class="job">
+                <p>Algunos de mis pasatiempos son:</p>
+                <ul>
+                    <li><b> Programación:</b> Me encanta escribir código y desarrollar proyectos para mejorar mis
+                        habilidades.</li>
+                    <li><b>Videojuegos: </b>Me encanta jugar en linea junto a mis amigos, y pasar un buen rato en la
+                        Nintendo Switch.</li>
+                    <li><b>Aprendizaje:</b> Me gusta estar al tanto de las últimas tecnologías, por lo que disfruto ver
+                        videos en Youtube y tomar cursos en línea.</li>
+                    <li><b>Música:</b> Me gusta escuchar música mientras trabajo y también me gusta crear música
+                        digital.</li>
+                    <li><b>Deportes: </b>Hace poco comencé a ir al gimnasio, estoy asistiendo 3 veces por semana,
+                        también me gusta jugar tenis.</li>
+                    <li><b>Deportes al aire libre:</b> Me gusta salir a realizar trekking los findes de semana.</li>
+                    <li><b>Lectura:</b> Soy un apasionado de la lectura, especificamente genero de Terror y mi autor
+                        favorito es Stephen King.</li>
+                </ul>
+                <img src="progra.png" class="img-hobbies">
+                <img src="joystick.png" class="img-hobbies">
+                <img src="aprendizaje.png" class="img-hobbies">
+                <img src="musica.png" class="img-hobbies">
+                <img src="tenis.png" class="img-hobbies">
+                <img src="trekking.png" class="img-hobbies">
+                <img src="libro.png" class="img-hobbies">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Presentacion">
+        <div class="job">
+            <div class="box">
+                <h2>Presentación</h2>
+            </div>
+                <p>A continuación puede revisar un breve video de presentacion y conocerme un poco más..</p><br>
+                <div style="text-align:center;">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rx1Qz-hyFp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>          
+            </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Cristian Flores Bernal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <button id="back-to-top" title="Volver al inicio"><i class="bi bi-arrow-up"></i></button>
+</body>
+
+</html>
